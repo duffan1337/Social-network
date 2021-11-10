@@ -34,8 +34,8 @@ debugger
             .filter(p=>p>=leftPortionPageNUmber && p<=rightPortionPageNUmber)
             .map((p)=>{
                 return <span className ={cn({
-                    [styles.selectPage]: props.currentPage===p
-                }, styles.pageNumber)}
+                    [styles.selectedPage]: props.currentPage===p
+                }, styles.pageNumber)} 
                 key={p}
                 onClick={(e)=>{
                     props.onPageChanged(p)
